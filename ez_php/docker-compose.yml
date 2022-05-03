@@ -1,0 +1,8 @@
+version: '3'
+services:
+
+  webapp:
+    build: ./
+    ports:
+      - 49180:80
+      - 49182:3306

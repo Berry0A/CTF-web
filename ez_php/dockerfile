@@ -1,0 +1,6 @@
+FROM tutum/lamp
+RUN rm /var/www/html/index.php
+COPY src/php.ini /etc/php5/apache2
+COPY src/index.php /var/www/html
+COPY src/f4lg_No.php /var/www/html
+RUN service apache2 restart 
